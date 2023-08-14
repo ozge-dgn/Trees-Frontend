@@ -1,48 +1,21 @@
-import '../styles/LeftMenu.css'
+import '../styles/Menu.css'
 import {useNavigate} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/saga-green/theme.css'
-import {Menu} from "primereact/menu";
-import {useRef} from "react";
-import {Toast} from "primereact/toast";
-import {Button} from "primereact/button";
-export default function LeftMenu(){
+import LogoMenu from './LogoMenu.js'
+export default function LeftMenu({className}){
+    const navigate = useNavigate();
     let items = [
-        {
-            label: "",
-            items:[{
-                template: (item, options) => {
-                    return (
-                        <div>
-                            <img src={require("../assets/tree-logo-v2.webp")}/>
-                        </div>
-                    )
-                }
-            },{label: 'Home',command:()=>{
-
-                }}]
-        }
-        ,
-        {
-            label: "",
-            items:[{label: 'Trees',command:()=>{
-
-                }}]
-        }
-        ,
-        {
-            label: "",
-            items:[{label: 'About Us',command:()=>{
-
-                }}]
-        }
+        {label:"Home", command:()=>{ navigate("/Home") }},
+        {label:"About Us", command:()=>{ navigate("/AboutUs") }},
+        {label:"Trees", command:()=>{navigate("/Trees")}}
 
     ];
 
     return (
         <>
-            <Menu className="flex-grow-1" model={items}></Menu>
+            <LogoMenu className={"min-vh-100 "+className} model={items} logo="tree-logo-v2.webp"></LogoMenu>
         </>
     )
 }
