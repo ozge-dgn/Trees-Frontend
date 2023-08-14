@@ -7,9 +7,9 @@ import LogoMenu from './LogoMenu.js'
 export default function LeftMenu({className}){
     const navigate = useNavigate();
     let items = [
-        {label:"Home", command:()=>{ navigate("/Home") }},
-        {label:"About Us", command:()=>{ navigate("/AboutUs") }},
-        {label:"Trees", command:()=>{navigate("/Trees")}}
+        {label:"Home", command:()=>{ navigate("/home") }},
+        {label:"About Us", command:()=>{ navigate("/about") }},
+        {label:"Trees", command:()=>{ navigate("/trees") }}
 
     ];
 
