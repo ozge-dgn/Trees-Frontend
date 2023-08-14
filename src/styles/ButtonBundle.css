@@ -1,0 +1,11 @@
+.bundle{
+    display:flex;
+    justify-content:center;
+    gap:3rem;
+    margin:1rem;
+}
+.bundle Button{
+    font-size:1.5rem;
+    border-radius:2rem;
+}
+

@@ -1,0 +1,24 @@
+.logo img{
+    height:100%;
+    width:auto;
+}
+.logo{
+    min-height:50vh;
+}
+
+.item{
+    cursor:pointer;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    font-size: xx-large;
+    width: auto;
+    height: 100vh;
+
+}
+.menu li{
+    list-style-type: none;
+}
