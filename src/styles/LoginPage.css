@@ -1,0 +1,38 @@
+.bg{
+    background:url("../assets/mountain-forest.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+h1{
+    font-size:5rem;
+}
+.right-column{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background-color:rgba(0,0,0,0.7);
+
+    text-align: center;
+    font-size:2rem;
+}
+.right-column p{
+    font-size:1.5rem;
+}
+.right-column Button{
+    font-size:2rem;
+}
+
+.left-column{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-self:center;
+    text-align:left;
+
+    color: white;
+    text-shadow:0 0 20px black;
+}
+.left-column h2,h3{
+    font-size:5rem;
+
+}
