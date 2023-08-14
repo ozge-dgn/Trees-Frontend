@@ -4,6 +4,8 @@ import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/saga-green/theme.css'
 import LeftMenu from '../components/LeftMenu';
 import TreeCount from '../components/TreeCount';
+import MakePost from "../components/MakePost";
+import Post from "../components/Post";
 
 export default function HomePage(){
 
@@ -29,21 +31,8 @@ function MiddleColumn(){
     return(
         <>
             <MakePost/>
-            <Posts/>
+            <Post/>
         </>
     )
 }
-function MakePost(){
-    return(
-        <>
-            create your post
-        </>
-    )
-}
-function Posts(){
-    return(
-        <>
 
-        </>
-    )
-}

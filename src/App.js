@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage"
 import Trees from "./pages/Trees";
 import AboutUs from "./pages/AboutUs";
 
-function App() {
+function App() {//Handle jwt token issues here with use effect
   return(
       <>
         <BrowserRouter>
